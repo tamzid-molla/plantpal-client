@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #20B806;
+  --color-secondary: #FFFFFF;
+}
+
+body{
+  font-family: "Merriweather", serif;
+}
+
+a.active{
+  color: white;
+  border: 1px solid ;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
