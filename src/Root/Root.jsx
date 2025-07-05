@@ -8,7 +8,7 @@ import { AuthContext } from "../Context/FirebaseContext";
 const Root = () => {
   const { loading, dark } = useContext(AuthContext);
   return (
-    <div className={`${dark && "bg-gray-800"} max-w-[2500px] mx-auto`}>
+    <div className={`${dark ? "bg-gray-800 text-white" : "text-black bg-white"} max-w-[2500px] mx-auto`}>
       {loading ? (
         <Loader></Loader>
       ) : (

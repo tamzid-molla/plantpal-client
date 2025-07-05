@@ -6,9 +6,26 @@ export const AuthContext = createContext();
 const FirebaseContext = ({ children }) => {
     //Toggle MODE 
     const [dark, setDark] = useState(() => {
-        const saveMode = localStorage.getItem('darkMode');
-        return saveMode ? JSON.parse(saveMode) : false;
+  const savedMode = localStorage.getItem('darkMode');
+  if (savedMode !== null) {
+    return JSON.parse(savedMode); // user manually set korse
+  } else {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches; // fallback to device theme
+  }
     });
+    
+    useEffect(() => {
+  if (dark) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+
+  // Save user preference
+  localStorage.setItem('darkMode', JSON.stringify(dark));
+}, [dark]);
+
+
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
 

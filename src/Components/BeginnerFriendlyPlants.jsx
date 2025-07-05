@@ -83,18 +83,18 @@ const BeginnerFriendlyPlants = () => {
                     <h3 className="text-xl font-semibold text-white">
                       {plant.name}
                     </h3>
-                    <FaLeaf className="text-green-400 text-2xl mt-2" />
+                    <FaLeaf className="text-teal-600 text-2xl mt-2" />
                   </div>
                 </div>
 
                 {/* Back Face */}
                 <div className="flip-card-back w-full h-full flex flex-col justify-center items-center text-center p-4 space-y-2">
-                  <FaLeaf className="text-green-600 text-3xl" />
-                  <h3 className="text-lg font-semibold text-green-700">
+                  <FaLeaf className="text-teal-600 text-3xl" />
+                  <h3 className="text-lg font-semibold text-teal-600">
                     {plant.name}
                   </h3>
                   <p className=" text-sm">{plant.description}</p>
-                  <p className="text-green-600 text-sm font-medium">
+                  <p className="text-sm font-medium">
                     <span className="font-bold">Tip:</span> {plant.tip}
                   </p>
                 </div>

@@ -46,9 +46,9 @@ const TopPlantCareMistakes = () => {
                 } py-10 rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-103 hover:shadow-xl`}
             >
               <div className="flex justify-center mb-4">{mistake.icon}</div>
-              <h3 className="text-xl font-semibold text-green-700 mb-2">{mistake.title}</h3>
+              <h3 className="text-xl font-semibold text-teal-600 mb-2">{mistake.title}</h3>
               <p className=" mb-4">{mistake.description}</p>
-              <p className="text-green-600 font-medium">
+              <p className="font-medium">
                 <span className="font-bold">Tip:</span> {mistake.tip}
               </p>
             </div>

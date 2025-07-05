@@ -9,8 +9,8 @@ const NewPlants = ({ allData }) => {
   return (
     <div
       className={`my-28 card shadow-sm py-16 w-11/12 mx-auto rounded-xl`}>
-      <h2 className="text-4xl text-center font-bold mb-10">
-        NEW <span className="text-teal-600">PLANTS</span>
+      <h2 className="text-4xl text-teal-600 text-center font-bold mb-10">
+        NEW PLANTS
       </h2>
       {AllInfo.length === 0 ? (
         <NoPlants></NoPlants>

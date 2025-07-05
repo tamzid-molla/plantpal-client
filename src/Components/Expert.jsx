@@ -81,9 +81,6 @@ const Expert = () => {
               <h3 className="text-xl font-semibold">{expert.name}</h3>
               <p className="text-teal-100">{expert.position}</p>
               <p className="text-teal-200">Experience: {expert.experience}</p>
-              <button className="btn btn-secondary text-black w-full text-[16px] mt-3 rounded-lg">
-                Details
-              </button>
             </div>
           </div>
         ))}
